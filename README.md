@@ -1,24 +1,39 @@
 # Learn JavaScript with MDN
 
+https://learn-javascript-with-mdn.xgqfrms.xyz
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
+## JavaScript & MDN
 
-
-## CI
-
-> GitHub Actions
-
-https://help.github.com/en/articles/workflow-syntax-for-github-actions
-
-## Travis CI
-
-https://travis-ci.org/github/xgqfrms/learn-javascript-with-mdn
-
-https://www.cnblogs.com/xgqfrms/p/12851281.html
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 
-## Projects
+## Tutorials
 
-https://github.com/users/xgqfrms/projects
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Tutorials
 
-https://github.com/xgqfrms?tab=projects
+### Complete beginners
+
+### JavaScript Guide
+
+### Intermediate
+
+### Advanced
+
+## References
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
+### Built-in objects
+
+### Expressions & operators
+
+### Statements & declarations
+
+### Functions
+
+### Classes
+
+### Errors
+
+### Misc
+
