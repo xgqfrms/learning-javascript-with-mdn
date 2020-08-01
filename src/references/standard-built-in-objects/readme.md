@@ -6,74 +6,74 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 ## Built-in objects
 
-AggregateError 🧪
-Array
-ArrayBuffer
-AsyncFunction
-Atomics
-BigInt
-BigInt64Array
-BigUint64Array
-Boolean
-DataView
-Date
-Error
-EvalError
-FinalizationRegistry
-Float32Array
-Float64Array
-Function
-Generator
-GeneratorFunction
-Infinity
-Int16Array
-Int32Array
-Int8Array
-InternalError
-Intl
-JSON
-Map
-Math
-NaN
-Number
-Object
-Promise
-Proxy
-RangeError
-ReferenceError
-Reflect
-RegExp
-Set
-SharedArrayBuffer
-String
-Symbol
-SyntaxError
-TypeError
-TypedArray
-URIError
-Uint16Array
-Uint32Array
-Uint8Array
-Uint8ClampedArray
-WeakMap
-WeakRef
-WeakSet
-WebAssembly
-decodeURI()
-decodeURIComponent()
-encodeURI()
-encodeURIComponent()
-escape() 👎
-eval()
-globalThis
-isFinite()
-isNaN()
-null
-parseFloat()
-parseInt()
-undefined
-unescape() 👎
-uneval() ⚠️
+  AggregateError 🧪
+  Array
+  ArrayBuffer
+  AsyncFunction
+  Atomics
+  BigInt
+  BigInt64Array
+  BigUint64Array
+  Boolean
+  DataView
+  Date
+  Error
+  EvalError
+  FinalizationRegistry
+  Float32Array
+  Float64Array
+  Function
+  Generator
+  GeneratorFunction
+  Infinity
+  Int16Array
+  Int32Array
+  Int8Array
+  InternalError
+  Intl
+  JSON
+  Map
+  Math
+  NaN
+  Number
+  Object
+  Promise
+  Proxy
+  RangeError
+  ReferenceError
+  Reflect
+  RegExp
+  Set
+  SharedArrayBuffer
+  String
+  Symbol
+  SyntaxError
+  TypeError
+  TypedArray
+  URIError
+  Uint16Array
+  Uint32Array
+  Uint8Array
+  Uint8ClampedArray
+  WeakMap
+  WeakRef
+  WeakSet
+  WebAssembly
+  decodeURI()
+  decodeURIComponent()
+  encodeURI()
+  encodeURIComponent()
+  escape() 👎
+  eval()
+  globalThis
+  isFinite()
+  isNaN()
+  null
+  parseFloat()
+  parseInt()
+  undefined
+  unescape() 👎
+  uneval() ⚠️
 
 
 ## Standard objects by category
@@ -191,8 +191,6 @@ BigUint64Array
 
 ### Reflection
 
-> 反射???
-
   Reflect
   Proxy
 
@@ -221,7 +219,5 @@ BigUint64Array
   WebAssembly.RuntimeError
 
 ### Other
-
-> 其他
 
   arguments
