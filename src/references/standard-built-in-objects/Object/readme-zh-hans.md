@@ -3,10 +3,15 @@
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 ## 属性
+
+```md
   Object.prototype.__proto__ 👎
   Object.prototype.constructor
+```
 
 ## 方法
+
+```md
   Object.assign()
   Object.create()
   Object.defineProperties()
@@ -39,22 +44,28 @@ https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects
   Object.seal()
   Object.setPrototypeOf()
   Object.values()
+```
 
 ## 继承:
 
 Function
 
 ### 属性
+
+```md
   Function.arguments 👎
   Function.caller 👎
   Function.displayName ⚠️
   Function.length
   Function.name
+```
 
 ### 方法
+
+```md
   Function.prototype.apply()
   Function.prototype.bind()
   Function.prototype.call()
   Function.prototype.toSource() ⚠️ 🗑
   Function.prototype.toString()
-
+```

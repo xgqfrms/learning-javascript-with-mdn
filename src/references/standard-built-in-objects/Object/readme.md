@@ -3,10 +3,15 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 ## Properties
+
+```md
   Object.prototype.__proto__ 👎
   Object.prototype.constructor
+```
 
 ## Methods
+
+```md
   Object.assign()
   Object.create()
   Object.defineProperties()
@@ -39,22 +44,28 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
   Object.seal()
   Object.setPrototypeOf()
   Object.values()
+```
 
 ## Inheritance:
 
 Function
 
 ### Properties
+
+```md
   Function.arguments 👎
   Function.caller 👎
   Function.displayName ⚠️
   Function.length
   Function.name
+```
 
 ### Methods
+
+```md
   Function.prototype.apply()
   Function.prototype.bind()
   Function.prototype.call()
   Function.prototype.toSource() ⚠️ 🗑
   Function.prototype.toString()
-
+```
