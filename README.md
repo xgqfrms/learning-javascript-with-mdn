@@ -19,11 +19,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Tutorials
 
 ### Intermediate
 
-[Intermediate Tutorial](./tutorials/intermediate/readme.md)
+[Intermediate Tutorial](./src/tutorials/intermediate/readme.md)
 
 ### Advanced
 
-[Advanced Tutorial](./tutorials/advanced/readme.md)
+[Advanced Tutorial](./src/tutorials/advanced/readme.md)
 
 ## References
 
@@ -31,11 +31,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
 ### Built-in objects
 
-[Standard Built-in objects](./references/standard-built-in-objects/readme.md)
+[Standard Built-in objects](./src/references/standard-built-in-objects/readme.md)
 
 ### Expressions & operators
 
-[Expressions & operators](./references/expressions-and-operators/readme.md)
+[Expressions & operators](./src/references/expressions-and-operators/readme.md)
 
 ### Statements & declarations
 
