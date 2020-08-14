@@ -1,5 +1,17 @@
 # 杂项
 
+```code
+  JavaScript technologies overview
+  Lexical grammar
+  JavaScript data structures
+  Enumerability and ownership of properties
+  Iteration protocols
+  Strict mode
+  Transitioning to strict mode
+  Template literals
+  Deprecated features
+```
+
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/JavaScript_technologies_overview
 
 https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Lexical_grammar
