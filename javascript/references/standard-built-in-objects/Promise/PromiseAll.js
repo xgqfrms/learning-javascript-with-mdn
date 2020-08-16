@@ -32,6 +32,7 @@ const PromiseAll = (promises = []) => {
             result.push(value)
           }
         }).catch(err => {
+          log(`error 1`)
           throw new Error(err);
         });
       });
@@ -40,11 +41,13 @@ const PromiseAll = (promises = []) => {
         return resolve(result)
       }
     } catch (error) {
+      log(`error 2`)
       log(`Promise Error`, error)
       throw new Error(error);
       // return reject(error);
     }
   }).catch(err => {
+    log(`error 3`)
     log(`Promise Error`, err)
     return reject(error);
   });
