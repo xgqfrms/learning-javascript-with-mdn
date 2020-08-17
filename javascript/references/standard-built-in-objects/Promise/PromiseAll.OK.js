@@ -21,24 +21,33 @@
 const log = console.log;
 
 const PromiseAll = (promises = []) => {
-  // let count = 0;
+  let count = 0;
   const result = [];
   return new Promise((resolve, reject) => {
     promises.forEach((promise) => {
       Promise.resolve(promise).then(value => {
         if(value) {
-          // count += 1;
+          count += 1;
           result.push(value)
         }
-        if(result.length === promises.length) {
+        if(count === promises.length) {
           // log(`PromiseAll OK`, promises)
           resolve(result)
+          // return resolve(result)
         }
       }, err => {
+        // throw new Error(err);
+        // log(`error 1`, err)
         reject(err);
       });
     });
-  });
+  })
+  // .catch(error => {
+  //   log(`error 3`)
+  //   log(`Promise Error 3`, error)
+  //   // reject(error);
+  //   // return reject(error);
+  // });
 }
 
 /*
@@ -99,16 +108,5 @@ promisesOK values = [ 3, 42, 'foo' ]
 
 OK = Promise { undefined }
 Error = Promise { undefined }
-
-*/
-
-
-/*
-$ node PromiseAll.js ✅
-
-catch error = promise error
-promisesOK values = [ 3, 42, 'foo' ]
-
-OK = Promise { undefined }
 
 */

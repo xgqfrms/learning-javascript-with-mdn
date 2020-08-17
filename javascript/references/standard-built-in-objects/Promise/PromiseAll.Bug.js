@@ -21,24 +21,42 @@
 const log = console.log;
 
 const PromiseAll = (promises = []) => {
-  // let count = 0;
-  const result = [];
   return new Promise((resolve, reject) => {
-    promises.forEach((promise) => {
-      Promise.resolve(promise).then(value => {
-        if(value) {
-          // count += 1;
-          result.push(value)
-        }
-        if(result.length === promises.length) {
-          // log(`PromiseAll OK`, promises)
-          resolve(result)
-        }
-      }, err => {
-        reject(err);
+    let count = 0;
+    const result = [];
+    try {
+      promises.forEach((promise) => {
+        Promise.resolve(promise).then(value => {
+          if(value) {
+            count += 1;
+            result.push(value)
+          }
+        }).catch(err => {
+          log(`error 1`)
+          throw new Error(err);
+          // return err;
+        });
       });
-    });
-  });
+      if(count === promises.length) {
+        log(`PromiseAll OK`)
+        resolve(result)
+        // return resolve(result)
+      }
+    } catch (error) {
+      log(`error 2`)
+      log(`Promise Error`, error)
+      // return error;
+      // throw new Error(error);
+      reject(error);
+      // return reject(error);
+    }
+  })
+  // .catch(err => {
+  //   log(`error 3`)
+  //   log(`Promise Error`, err)
+  //   // reject(error);
+  //   // return reject(error);
+  // });
 }
 
 /*
@@ -62,7 +80,8 @@ const promise4 = new Promise((resolve, reject) => {
   reject(`promise error`);
 });
 
-const promisesOK = [promise1, promise2, promise3];
+const promisesOK = [promise1, promise2];
+// const promisesOK = [promise1, promise2, promise3];
 const promisesError = [promise1, promise2, promise3, promise4];
 
 const OK = PromiseAll(promisesOK).then((values) => {
@@ -73,11 +92,11 @@ const OK = PromiseAll(promisesOK).then((values) => {
 //   log(`promisesOK values =`, values);
 // });
 
-const Error = PromiseAll(promisesError).then((values) => {
-  log(`promisesError values =`, values);
-}).catch(err => {
-  log(`catch error =`, err)
-});
+// const Error = PromiseAll(promisesError).then((values) => {
+//   log(`promisesError values =`, values);
+// }).catch(err => {
+//   log(`error =`, err)
+// });
 
 // const Error = Promise.all(promisesError).then((values) => {
 //   log(`promisesError values =`, values);
@@ -87,7 +106,7 @@ const Error = PromiseAll(promisesError).then((values) => {
 
 setTimeout(() => {
   log(`\nOK =`, OK)
-  log(`Error =`, Error)
+  // log(`Error =`, Error)
 }, 5);
 
 /*
@@ -99,16 +118,5 @@ promisesOK values = [ 3, 42, 'foo' ]
 
 OK = Promise { undefined }
 Error = Promise { undefined }
-
-*/
-
-
-/*
-$ node PromiseAll.js ✅
-
-catch error = promise error
-promisesOK values = [ 3, 42, 'foo' ]
-
-OK = Promise { undefined }
 
 */
