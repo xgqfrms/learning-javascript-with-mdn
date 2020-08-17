@@ -24,12 +24,19 @@ const PromiseAll = (promises = []) => {
   let count = 0;
   const result = [];
   return new Promise((resolve, reject) => {
-    promises.forEach((promise) => {
+    promises.forEach((promise, i) => {
       Promise.resolve(promise).then(value => {
         if(value) {
+          // result.push(value)
+          result[i] = value;
+          // result[count] = value;
           count += 1;
-          result.push(value)
         }
+        // if(result.length === promises.length) {
+        //   // log(`PromiseAll OK`, promises)
+        //   resolve(result)
+        //   // return resolve(result)
+        // }
         if(count === promises.length) {
           // log(`PromiseAll OK`, promises)
           resolve(result)
@@ -63,10 +70,14 @@ see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode
 
 // test
 const promise1 = Promise.resolve(3);
-const promise2 = 42;
-const promise3 = new Promise((resolve, reject) => {
+const promise2 = new Promise((resolve, reject) => {
   setTimeout(resolve, 0, 'foo');
 });
+const promise3 = 42;
+// const promise2 = 42;
+// const promise3 = new Promise((resolve, reject) => {
+//   setTimeout(resolve, 0, 'foo');
+// });
 const promise4 = new Promise((resolve, reject) => {
   reject(`promise error`);
 });

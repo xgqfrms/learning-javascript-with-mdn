@@ -8,7 +8,7 @@
  * @created 2020-08-14
  * @modified
  *
- * @description PromiseAll
+ * @description PromiseAll & async promise order OK ✅
  * @difficulty Easy Medium Hard
  * @complexity O(n)
  * @augments
@@ -20,18 +20,21 @@
 
 const log = console.log;
 
-const PromiseAll = (promises = []) => {
-  // let count = 0;
+const PromiseAll = (promises = [], debug = false) => {
   const result = [];
   return new Promise((resolve, reject) => {
-    promises.forEach((promise) => {
+    promises.forEach((promise, i) => {
       Promise.resolve(promise).then(value => {
         if(value) {
-          // count += 1;
-          result.push(value)
+          // async promise order OK ✅
+          result[i] = value;
+          // async push order bug ❌
+          // result.push(value)
         }
         if(result.length === promises.length) {
-          // log(`PromiseAll OK`, promises)
+          if(debug) {
+            log(`PromiseAll OK`, promises)
+          }
           resolve(result)
         }
       }, err => {
@@ -41,23 +44,16 @@ const PromiseAll = (promises = []) => {
   });
 }
 
-/*
-
-Unhandled promise rejection.
-This error originated either by throwing inside of an async function without a catch block,
-or by rejecting a promise which was not handled with .catch().
-To terminate the node process on unhandled promise rejection,
-use the CLI flag `--unhandled-rejections=strict`,
-see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode
-
-*/
-
 // test
 const promise1 = Promise.resolve(3);
-const promise2 = 42;
-const promise3 = new Promise((resolve, reject) => {
+const promise2 = new Promise((resolve, reject) => {
   setTimeout(resolve, 0, 'foo');
 });
+const promise3 = 42;
+// const promise2 = 42;
+// const promise3 = new Promise((resolve, reject) => {
+//   setTimeout(resolve, 0, 'foo');
+// });
 const promise4 = new Promise((resolve, reject) => {
   reject(`promise error`);
 });
@@ -90,25 +86,26 @@ setTimeout(() => {
   log(`Error =`, Error)
 }, 5);
 
+
+/*
+$ node PromiseAll.js ✅
+
+catch error = promise error
+promisesOK values = [ 3, 'foo', 42 ]
+
+OK = Promise { undefined }
+
+*/
+
 /*
 
-$ node promiseAll.js
+$ node promise.all.js
 
 error = promise error
-promisesOK values = [ 3, 42, 'foo' ]
+promisesOK values = [ 3, 'foo', 42 ]
 
 OK = Promise { undefined }
 Error = Promise { undefined }
 
 */
 
-
-/*
-$ node PromiseAll.js ✅
-
-catch error = promise error
-promisesOK values = [ 3, 42, 'foo' ]
-
-OK = Promise { undefined }
-
-*/

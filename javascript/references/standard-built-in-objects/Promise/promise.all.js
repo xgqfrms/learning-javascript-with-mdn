@@ -21,10 +21,14 @@
 const log = console.log;
 
 const promise1 = Promise.resolve(3);
-const promise2 = 42;
-const promise3 = new Promise((resolve, reject) => {
+const promise2 = new Promise((resolve, reject) => {
   setTimeout(resolve, 0, 'foo');
 });
+const promise3 = 42;
+// const promise2 = 42;
+// const promise3 = new Promise((resolve, reject) => {
+//   setTimeout(resolve, 0, 'foo');
+// });
 const promise4 = new Promise((resolve, reject) => {
   reject(`promise error`);
 });
