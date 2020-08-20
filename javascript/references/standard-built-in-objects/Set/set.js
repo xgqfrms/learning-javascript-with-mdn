@@ -35,3 +35,19 @@ mySet.has(1)
 // true
 mySet.has(o)
 // true
+
+for (const key in object) {
+  if (object.hasOwnProperty(key)) {
+    const element = object[key];
+
+  }
+}
+
+for (const iterator of object) {
+  //
+}
+
+for (let i = 0; i < array.length; i++) {
+  const element = array[i];
+
+}
