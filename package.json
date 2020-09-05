@@ -1,0 +1,35 @@
+{
+  "name": "learn-javascript-with-mdn",
+  "version": "1.0.1",
+  "description": "Learning JavaScript with MDN",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/learn-javascript-with-mdn.git"
+  },
+  "keywords": [
+    "Learning",
+    "JavaScript",
+    "MDN",
+    "js"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xgqfrms/learn-javascript-with-mdn/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/learn-javascript-with-mdn#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "jest": "^26.4.2"
+  }
+}
