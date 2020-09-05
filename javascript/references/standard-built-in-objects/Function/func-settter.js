@@ -8,7 +8,7 @@
  * @created 2020-09-05
  * @modified
  *
- * @description
+ * @description class getter & setter
  * @difficulty Easy Medium Hard
  * @complexity O(n)
  * @augments
