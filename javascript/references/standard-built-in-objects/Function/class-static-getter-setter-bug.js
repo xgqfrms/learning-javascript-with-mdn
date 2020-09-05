@@ -20,6 +20,17 @@
 
 const log = console.log;
 
+let window = {
+  username: "xgqfrms",
+};
+// let window = window || {
+//   username: "xgqfrms",
+// };
+
+// global variable
+// global.username = "web fullstack";
+let username = "web fullstack";
+
 class Person {
   constructor(name = `xgqfrms`, dollar = 100) {
     this.username = name;
@@ -27,9 +38,22 @@ class Person {
   }
   // static property / public class field
   static staticName = `static property / public class field`;
-  static getStaticName() {
-    log(`staticName =`, staticName);
-    return this.staticName;
+  // static methods just only for the Utils function ✅
+  static get getStaticName() {
+    log(`\nstaticName =`, Person.staticName);
+    return Person.staticName || Person.name;
+  }
+  static get userName() {
+    log(`\nstatic userName =`, window.username || global.username);
+    return window.username || global.username;
+  }
+  static set userName(name) {
+    log(`\nnew name =`, name);
+    if(window.username) {
+      window.username = name;
+    } else {
+      global.username = name;
+    }
   }
   get fortune() {
     log(`\nget money =`, this.money);
@@ -58,6 +82,19 @@ user.fortune = 888;
 
 log(user.fortune);
 
+log(Person.getStaticName);
+// staticName = static property / public class field
+log(Person.staticName);
+// static property / public class field
+
+
+log(Person.userName);
+// static userName = xgqfrms
+
+Person.userName = "abc xyz";
+
+log(Person.userName);
+// static userName = abc xyz
 
 /*
 
