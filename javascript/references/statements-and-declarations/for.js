@@ -18,14 +18,20 @@
 
 const log = console.log;
 
-
-
-
-
-
-
-const log = console.log;
-
-for(let i = 0; i < 3; i++) {
- log(`for let i =`, i)
+for(var i = 0; i < 3; i++) {
+  log(`for var i =`, i);
 }
+log(`var i =`, i);
+
+for(let j = 0; j < 3; j++) {
+ log(`for let j =`, j);
+}
+// log(`j =`, j);
+// ReferenceError: j is not defined
+
+for(const k = 0; k < 3; k++) {
+  // TypeError: Assignment to constant variable.
+  log(`for const k =`, k);
+}
+// log(`k =`, k);
+// ReferenceError: k is not defined
