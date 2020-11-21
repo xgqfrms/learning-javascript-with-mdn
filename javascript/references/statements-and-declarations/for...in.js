@@ -20,11 +20,11 @@
 const log = console.log;
 
 
+const obj = {
+  a: 1,
+  b: 2,
+};
 
-
-
-const log = console.log;
-const arr = [1, 2, 3];
-for(const item of arr) {
- log(`for of arrayLike item =`, item)
+for(const key in obj) {
+ log(`for in object key =`, key)
 }
