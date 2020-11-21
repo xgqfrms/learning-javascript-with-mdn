@@ -1,4 +1,4 @@
-# 使用 MDN 学习 JavaScript / 和 MDN 一起学习 JavaScript
+# 与 MDN 一起学习 JavaScript
 
 https://learn-javascript-with-mdn.xgqfrms.xyz
 
