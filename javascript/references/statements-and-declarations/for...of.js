@@ -18,22 +18,10 @@
 
 const log = console.log;
 
-const obj = {
-  a: 1,
-  b: 2,
-};
-for(const in obj) {
- log(`for in object i =`, i)
+
+const arr = [1, 2, 3];
+
+for(const item of arr) {
+ log(`for of arrayLike item =`, item)
 }
 
-/*
-
-// error
-const test1 = isValid(`((}}`);
-// ok
-const test2 = isValid(`()[]{}`);
-
-log(`❌test =`, test1 ? `✅` : `❌`);
-log(`✅test ok =`, test2 ? `✅` : `❌`);
-
-*/
