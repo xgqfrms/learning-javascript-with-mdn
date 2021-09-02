@@ -13,7 +13,7 @@
  * @complexity O(n)
  * @augments
  * @example https://github.com/xgqfrms/typescript-in-action/issues/17#issuecomment-910461508
- * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
+ * @link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
  * @solutions
  *
  */
