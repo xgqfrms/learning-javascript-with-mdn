@@ -1,0 +1,27 @@
+
+<video></video>
+<br/>
+<input type="file" name="file" id="fileItem" onchange="onChange()" >
+
+<a href="blob:https://cdpn.io/cfcd2229-8113-44fb-824f-f315154dc731" download="logo.png" >
+  <img src="blob:https://cdpn.io/cfcd2229-8113-44fb-824f-f315154dc731" alt="logo.png" />
+  blob:https://cdpn.io/cfcd2229-8113-44fb-824f-f315154dc731
+</a>
+
+<script>
+  var URL = window.URL || window.webkitURL;
+  var video = document.getElementsByTagName('video')[0];
+  function onChange() {
+      var fileItem = document.getElementById('fileItem');
+      var files = fileItem.files;
+      var file = files[0];
+      // File ✅
+      console.log('file', file);
+      var urlBlob = URL.createObjectURL(file);
+      video.src = urlBlob;
+      video.load();
+      video.onloadeddata = function() {
+        // video.play();
+      }
+  }
+</script>
