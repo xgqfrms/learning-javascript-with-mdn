@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="author" content="xgqfrms">
   <meta name="generator" content="VS code">
-  <title>XHR & Blob File Download & HTML5 Download</title>
+  <title>Fetch API & Blob File Download & HTML5 Download</title>
   <style>
     * {
       box-sizing: border-box;
@@ -23,7 +23,7 @@
 </head>
 <body>
   <header>
-    <h1>XHR & Blob File Download & HTML5 Download</h1>
+    <h1>Fetch API & Blob File Download & HTML5 Download</h1>
   </header>
   <main>
     <section>
@@ -34,28 +34,24 @@
         data-url="https://cdn.xgqfrms.xyz/HTML5/Blob/2022-04-07-sh.mp4">
         loading...
       </video>
-<!-- <a href="blob:https://cdpn.io/427850d4-54c2-44a4-b9fa-c398ec4e1258" target="_blank" >blob:https://cdpn.io/427850d4-54c2-44a4-b9fa-c398ec4e1258</a><br> -->
       <div>
         <a id="video-link" download="2022-sh.mp4">2022-sh.mp4</a>
       </div>
       <img id="img" download="logo.png" />
-<!--
-      <br><a href="blob:https://cdpn.io/cfcd2229-8113-44fb-824f-f315154dc731" target="_blank" download="logo.png" >
-  <img src="blob:https://cdpn.io/cfcd2229-8113-44fb-824f-f315154dc731" alt="logo.png" />
-  blob:https://cdpn.io/cfcd2229-8113-44fb-824f-f315154dc731
-</a> -->
       <div>
         <a id="img-link" download="logo.png">logo.png</a>
       </div>
-<br>
-<p>blob:https:// Blob 文件，通过设置 a 的 download 属性和 href 属性, 是可以下载 ✅</p>
-<p>blob:localhost:// Blob 文件，通过设置 a 的 download 属性和 href 属性, 是可以下载 ✅</p>
+      <br>
+      <h2>仅支持 XMLHttpRequest ✅ & 不支持 Fetch API ❌</h2>
+      <a href="https://codepen.io/xgqfrms/pen/xxpzGLY?editors=1010">https://codepen.io/xgqfrms/pen/xxpzGLY?editors=1010</a>
+      <p>blob:https:// Blob 文件，通过设置 a 的 download 属性和 href 属性, 是可以下载 ✅</p>
+      <p>blob:localhost:// Blob 文件，通过设置 a 的 download 属性和 href 属性, 是可以下载 ✅</p>
     </section>
   </main>
   <footer>
     <p>copyright&copy; xgqfrms 2022</p>
   </footer>
   <!-- js -->
-  <script src="./xhr.js"></script>
+  <script src="./fetch.js"></script>
 </body>
 </html>
