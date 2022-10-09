@@ -23,9 +23,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Tutorials
 
 [Advanced Tutorial](./javascript/tutorials/advanced/readme.md)
 
-## References
+## [References](./javascript/references/readme.md) ✅
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
+<!--
+https://github.com/xgqfrms/learning-javascript-with-mdn/tree/master/javascript/references
+-->
 
 ### Built-in objects
 
