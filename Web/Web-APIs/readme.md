@@ -7,7 +7,7 @@ https://developer.mozilla.org/en-US/docs/Web/API
 
 ## W
 
-Web Animations  
+Web Animations   
 Web Audio API 
 Web Authentication API 
 Web Crypto API 
