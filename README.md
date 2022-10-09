@@ -17,11 +17,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Tutorials
 
 ### Intermediate
 
-[Intermediate Tutorial](./javascript/tutorials/intermediate/readme.md)
+[Intermediate Tutorial](./javascript/tutorials/intermediate)
 
 ### Advanced
 
-[Advanced Tutorial](./javascript/tutorials/advanced/readme.md)
+[Advanced Tutorial](./javascript/tutorials/advanced)
 
 ## [References](./javascript/references) 🏗 🚧 🚜
 
@@ -36,30 +36,30 @@ https://github.com/xgqfrms/learning-javascript-with-mdn/tree/master/javascript/r
 
 ### Built-in objects
 
-[Standard Built-in objects](./javascript/references/standard-built-in-objects/readme.md)
+[Standard Built-in objects](./javascript/references/standard-built-in-objects)
 
 ### Expressions & operators
 
-[Expressions & operators](./javascript/references/expressions-and-operators/readme.md)
+[Expressions & operators](./javascript/references/expressions-and-operators)
 
 ### Statements & declarations
 
-[Statements & declarations](./javascript/references/statements-and-declarations/readme.md)
+[Statements & declarations](./javascript/references/statements-and-declarations)
 
 ### Functions
 
-[Functions](./javascript/references/functions/readme.md)
+[Functions](./javascript/references/functions)
 
 ### Classes
 
-[Classes](./javascript/references/classes/readme.md)
+[Classes](./javascript/references/classes)
 
 ### Errors
 
-[Errors](./javascript/references/errors/readme.md)
+[Errors](./javascript/references/errors)
 
 ### Misc
 
-[Misc](./javascript/references/misc/readme.md)
+[Misc](./javascript/references/misc)
 
 
